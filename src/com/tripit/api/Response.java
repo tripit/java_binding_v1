@@ -37,4 +37,20 @@ public class Response {
                "RESPONSE TIME: " + this.responseTimeMillis + "ms\n" +
                "RESPONSE BODY: " + this.content;
     }
+
+    public int getHttpStatusCode() {
+        return this.httpStatusCode;
+    }
+
+    public String getHttpStatusString() {
+        return this.httpStatusString;
+    }
+
+    public long getResponseTimeMillis() {
+        return this.responseTimeMillis;
+    }
+
+    public String getContent() {
+        return this.content;
+    }
 }
