@@ -1,0 +1,9 @@
+To run the Example.java file:
+
+1. Edit Example.java and add your appropriate values for CONSUMER_TOKEN, "CONSUMER_SECRET", "OAUTH_TOKEN", and "OAUTH_TOKEN_SECRET".
+
+2. From the command line, run:
+
+$ ./make.sh
+$ javac -cp tripit-api.jar:. Example.java
+$ java -cp tripit-api.jar:lib/*:. Example

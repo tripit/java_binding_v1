@@ -67,7 +67,7 @@ public class Request {
         // execute and time the request
         HttpClient httpClient = new DefaultHttpClient();
         long start = System.currentTimeMillis();
-        BasicHttpResponse response = (BasicHttpResponse) httpClient.execute(request);
+        HttpResponse response = (HttpResponse) httpClient.execute(request);
         long responseTime = System.currentTimeMillis() - start;
 
         // parse the response

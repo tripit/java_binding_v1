@@ -7,11 +7,12 @@ public class Example {
     public static void main(String[] args) throws Exception {
 	Credential cred;
 	Client client;
-	cred = new OAuthCredential("85bffb1da0b56bffc2bc1c6dc8c9774a74a3c28f",
-				   "5dff1f8a303149c6dc74c106902cd66cb767755b",
-				   "ecf5eea2058aa9c99a8fac194e6fd8108a6bcdb6",
-				   "3ee134a46872c58f80524eb11980fbea9e91f34d");
-	client = new Client(Client.DEFAULT_API_URI_PREFIX, cred);
+
+	cred = new OAuthCredential("CONSUMER_TOKEN",
+				   "CONSUMER_SECRET",
+				   "OAUTH_TOKEN",
+				   "OAUTH_TOKEN_SECRET");
+	client = new Client(cred, Client.DEFAULT_API_URI_PREFIX);
 
 	// list
 	Map<String, String> listMap = new HashMap<String, String>();

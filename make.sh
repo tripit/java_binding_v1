@@ -1,11 +1,12 @@
 #!/bin/sh
 
 if [ -z $REVISION ]; then
-    REVISION=`svn update . | cut -d' ' -f3 | cut -d'.' -f1`
+    REVISION=1
 fi
 
 rm -f tripit_java_v1_*.tgz
 rm -f tripit_java_v1_*.zip
+rm -f tripit-api.jar
 mkdir -p tripit_java_v1_${REVISION}/lib
 
 ant
