@@ -48,6 +48,16 @@ public enum Action {
             return client.replace(type, requestParameterMap);
         }
     },
+    SUBSCRIBE("subscribe", true) {
+        public Response execute(Client client, Type type, Map<String, String> requestParameterMap) throws Exception {
+            return client.subscribe(type, requestParameterMap);
+        }
+    },
+    UNSUBSCRIBE("unsubscribe", true) {
+        public Response execute(Client client, Type type, Map<String, String> requestParameterMap) throws Exception {
+            return client.unsubscribe(type, requestParameterMap);
+        }
+    },
     CRS_LOAD_RESERVATIONS("crsLoadReservations", true) {
         public Response execute(Client client, Type type, Map<String, String> requestParameterMap) throws Exception {
             return client.crsLoadReservations(requestParameterMap);

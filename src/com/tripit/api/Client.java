@@ -118,7 +118,17 @@ public class Client {
     public Response replace(Type type, Map<String, String> requestParameterMap) throws Exception {
         return this.genRequest(Action.REPLACE, type, requestParameterMap).execute(this.credential);
     }
-    
+
+    public Response subscribe(Type type, Map<String, String> requestParameterMap) throws Exception {
+        requestParameterMap.put("type", type.toString().toLowerCase());
+        return this.genRequest(Action.SUBSCRIBE, null, requestParameterMap).execute(this.credential);
+    }
+
+    public Response unsubscribe(Type type, Map<String, String> requestParameterMap) throws Exception {
+        requestParameterMap.put("type", type.toString().toLowerCase());
+        return this.genRequest(Action.UNSUBSCRIBE, null, requestParameterMap).execute(this.credential);
+    }
+
     public Response crsLoadReservations(Map<String, String> requestParameterMap) throws Exception {
         return this.genRequest(Action.CRS_LOAD_RESERVATIONS, null, requestParameterMap).execute(this.credential);
     }

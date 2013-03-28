@@ -34,7 +34,7 @@ public enum Type {
     RAIL (new Action[] {Action.GET, Action.DELETE}),
     RESTAURANT (new Action[] {Action.GET, Action.DELETE}),
     TRANSPORT (new Action[] {Action.GET, Action.DELETE}),
-    TRIP (new Action[] {Action.GET, Action.LIST, Action.DELETE}),
+    TRIP (new Action[] {Action.GET, Action.LIST, Action.DELETE, Action.SUBSCRIBE, Action.UNSUBSCRIBE}),
     WEATHER (new Action[] {Action.GET}),
     OBJECT (new Action[] {Action.LIST}),
     POINTS_PROGRAM (new Action[] {Action.GET, Action.LIST});
