@@ -22,6 +22,7 @@ package com.tripit.auth;
 import com.tripit.api.*;
 import java.io.*;
 import oauth.signpost.*;
+import oauth.signpost.commonshttp.*;
 import oauth.signpost.basic.*;
 import oauth.signpost.signature.*;
 
@@ -64,7 +65,7 @@ public class OAuthAccessTokenGetter {
         String accessTokenUrl = apiUriPrefix + "/oauth/access_token";
         String authorizeUrl = webUriPrefix + "/oauth/authorize";
 
-        OAuthProvider provider = new DefaultOAuthProvider(requestTokenUrl, accessTokenUrl, authorizeUrl);
+        OAuthProvider provider = new CommonsHttpOAuthProvider(requestTokenUrl, accessTokenUrl, authorizeUrl);
 
         System.out.println("\nfetching unauthorized request token...");
 
