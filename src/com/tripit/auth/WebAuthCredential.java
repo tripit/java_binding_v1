@@ -13,7 +13,7 @@
  * under the License.
  * 
  * @package    com.tripit.auth
- * @copyright  Copyright &copy; 2008-2012, TripIt, Inc.
+ * @copyright  Copyright &copy; 2008-2018 Concur Technologies, Inc.
  */
 
 package com.tripit.auth;
