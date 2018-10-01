@@ -1,6 +1,6 @@
 <!--
   *
-  * Copyright 2008-2012, Concur Technologies, Inc.
+  * Copyright 2008-2018, Concur Technologies, Inc.
   *
   -->
 <project name="TripIt API Java binding" default="dist" basedir=".">

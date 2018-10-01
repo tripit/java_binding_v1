@@ -1,5 +1,5 @@
 /**
- * Copyright 2008-2012 Concur Technologies, Inc.
+ * Copyright 2008-2018 Concur Technologies, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -14,7 +14,7 @@
  * under the License.
  * 
  * @package    com.tripit.api
- * @copyright  Copyright &copy; 2008-2012, TripIt, Inc.
+ * @copyright  Copyright &copy; 2008-2018 Concur Technologies, Inc.
  */
 
 package com.tripit.api;
